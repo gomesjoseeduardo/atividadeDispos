@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Principal camada de fundo -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1"
+    android:background="@drawable/walpaper_inicial">
+
+    <!-- Efeito de fundo preto com 50% de transparencia  -->
+    <ImageView
+        android:id="@+id/fundo_preto_50p"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.55"/>
+
+    <!-- Logo Decor Moveis -->
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/logo_decor"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Texto Decor Moveis -->
+    <TextView
+        android:id="@+id/ic_text_decormoveis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_decormoveis"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Texto Bem Vindos -->
+    <TextView
+        android:id="@+id/ic_text_bemvindos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_bemvindo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_text_decormoveis"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Texto conecte-se -->
+    <TextView
+        android:id="@+id/ic_text_conectese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_conecte_se"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_text_bemvindos" />
+
+    <!-- Button vamos lá -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_vamosla"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:text="@string/button_vamosla"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/background_button"
+        android:backgroundTint="@color/green_light"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_text_conectese" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

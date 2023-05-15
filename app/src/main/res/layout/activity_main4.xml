@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Principal camada de fundo -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <!-- Background ofertas -->
+    <LinearLayout
+        android:id="@+id/ic_ofertas1"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="horizontal"
+        android:background="@drawable/ofertas"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <!-- Background verde barra top -->
+    <LinearLayout
+        android:id="@+id/ic_background_barra"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@color/green_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <!-- Menu -->
+    <ImageView
+        android:id="@+id/ic_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_menu"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <!-- Barra pesquisar -->
+    <LinearLayout
+        android:id="@+id/ic_barraPesquisar"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <!-- Search -->
+    <ImageView
+        android:id="@+id/ic_iconSearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_search"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <!-- Texto Pesquisar -->
+    <TextView
+        android:id="@+id/txt_pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_decorMoveis"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <!-- Texto Ofertas Black Frieday-->
+    <TextView
+        android:id="@+id/txt_ofertasBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_ofertasBlack"
+        android:textColor="@color/green_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ic_ofertas1">
+    </TextView>
+
+    <!-- Background barra branco -->
+    <LinearLayout
+        android:id="@+id/ic_backgr_barra_white"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_background_barra">
+    </LinearLayout>
+
+    <!-- Location -->
+    <ImageView
+        android:id="@+id/ic_location"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_location"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/ic_backgr_barra_white">
+    </ImageView>
+
+    <!-- Enviar para CEP  -->
+    <TextView
+        android:id="@+id/txt_cep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_cep"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/ic_backgr_barra_white">
+    </TextView>
+
+    <!-- Background verde -->
+    <LinearLayout
+        android:id="@+id/ic_background_green"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:background="@drawable/background_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <!-- Texto Cadastro -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_ofertaSemana"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Background Cinza -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ic_background_gray"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/background_border"
+        android:backgroundTint="@color/gray_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+
+    <!-- Grid 1 -->
+    <LinearLayout
+        android:id="@+id/ic_grid01"
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/backgroundo_cadeira"
+        android:backgroundTint="@color/green_light"
+        app:layout_constraintStart_toStartOf="@id/ic_background_gray"
+        app:layout_constraintTop_toTopOf="@id/ic_background_gray">
+        <!-- Cadeira 01 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cadeira"/>
+    </LinearLayout>
+
+    <!-- Grid 2 -->
+    <LinearLayout
+        android:id="@+id/ic_grid02"
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/backgroundo_cadeira"
+        android:backgroundTint="@color/green_light"
+        app:layout_constraintEnd_toEndOf="@id/ic_background_gray"
+        app:layout_constraintTop_toTopOf="@id/ic_background_gray">
+        <!-- Cadeira 02 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cadeiraa"/>
+    </LinearLayout>
+
+    <!-- Grid 3 -->
+    <LinearLayout
+        android:id="@+id/ic_grid03"
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/backgroundo_cadeira"
+        android:backgroundTint="@color/green_light"
+        app:layout_constraintStart_toStartOf="@id/ic_background_gray"
+        app:layout_constraintTop_toTopOf="@id/ic_background_gray">
+        <!-- Cadeira 03 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cadeiraaa"/>
+    </LinearLayout>
+
+    <!-- Grid 4 -->
+    <LinearLayout
+        android:id="@+id/ic_grid04"
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/backgroundo_cadeira"
+        android:backgroundTint="@color/green_light"
+        app:layout_constraintEnd_toEndOf="@id/ic_background_gray"
+        app:layout_constraintTop_toTopOf="@id/ic_background_gray">
+        <!-- Cadeira 04 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cadeiraaaa"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
